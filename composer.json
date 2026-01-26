@@ -1,0 +1,26 @@
+{
+    "name": "appkit/db-pdo",
+    "type": "library",
+    "description": "Non-blocking PDO adapter for the AppKit framework",
+    "license": "MIT",
+    "require": {
+        "ext-igbinary": "*",
+        "ext-posix": "*",
+        "appkit/async": "^1.0",
+        "appkit/db": "^1.0",
+        "appkit/health": "^1.0",
+        "appkit/start-stop": "^1.0",
+        "react/async": "^4.3",
+        "react/child-process": "^0.6.7",
+        "react/promise": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppKit\\Database\\Pdo\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
