@@ -386,7 +386,7 @@ class Pdo implements StartStopInterface, HealthIndicatorInterface, DatabaseInter
 
         $stmtCount = count($this -> statements);
         if($stmtCount > 0) {
-            $this -> log -> warning("Connection closed with $stmtCount statements still in use");
+            $this -> log -> debug("Connection closed with $stmtCount statements still in use");
             $this -> statements = [];
         }
 
